@@ -115,7 +115,7 @@ input[type=checkbox] {
   margin: 50px 0;
   background-color: black;
   color: white;
-  height: 500px;
+  height: max-content;
   padding: 20px;
   height: fit-content;
   border-radius: 30px;
