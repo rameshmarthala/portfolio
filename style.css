@@ -125,7 +125,6 @@ input[type=checkbox] {
   display: flex;
   flex-direction: column;
   text-align: center;
-  height: 500px;
 }
 
 .aboutme-start {
