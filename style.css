@@ -1,0 +1,523 @@
+body {
+  font-family: cursive;
+}
+
+a {
+  text-decoration: none;  
+}
+
+li {
+  list-style: none;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: teal;
+  color: #fff;
+}
+
+.nav-links a {
+  color: #fff;
+}
+
+.logo {
+  font-size: 32px;
+}
+
+.menu {
+  display: flex;
+  gap: 1em;
+  font-size: 18px;
+}
+
+.menu li:hover {
+  background-color: #4c9e9e;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+.menu li {
+  padding: 5px 14px;
+}
+
+.services {
+  position: relative;
+}
+
+.dropdown {
+  background-color: rgb(1, 139, 139);
+  padding: 1em 0;
+  position: absolute;
+  display: none;
+  border-radius: 8px;
+  top: 35px;
+}
+
+.dropdown li+li {
+  margin-top: 10px;
+}
+
+.dropdown li {
+  padding: 0.5em 1em;
+  width: 8em;
+  text-align: center;
+}
+
+.dropdown li:hover {
+  background-color: #4c9e9e;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+  font-size: 24px;
+  user-select: none;
+  cursor: pointer;
+}
+
+.name {
+  position: relative;
+  width: 100%;
+  height: 500px; 
+  margin-top: 20px;
+}
+
+.name-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  border-radius: 10px;
+}
+
+.name-start {
+  position: absolute;
+  top: 10rem;
+  margin: 05rem 15rem;
+  font-size: 4rem !important;
+  font-family: cursive;
+  background-image: linear-gradient(to right, #500dd7, #db0808);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.name-start h2 {
+  font-size: 4rem !important;
+}
+
+.about {
+  margin: 50px 0;
+  background-color: black;
+  color: white;
+  height: 500px;
+  padding: 20px;
+  height: fit-content;
+  border-radius: 30px;
+}
+
+.aboutme {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 500px;
+}
+
+.aboutme-start {
+  justify-content: space-evenly;
+  text-align: center;
+  align-items: center;
+}
+
+.about-img {
+  width: 200px;
+  height: 200px;
+  padding: 5px;
+  border-radius: 40px;
+  object-fit: cover;
+  border: 2px solid grey;
+}
+
+.aboutme-start {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.about-matter {
+  text-align: center;
+  text-align: justify;
+  flex-wrap: wrap;
+  width: 600px;
+  padding: 15px;
+}
+
+.resume {
+  border: 2px solid red;
+  width: fit-content;
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+  padding: 10px;
+  text-align: center;
+}
+
+.resume a {
+  color: white;
+}
+
+.skill {
+  padding: 10px;
+  color: black;
+  width: 100%;
+  box-sizing: border-box;
+  object-fit: cover;
+}
+
+.skill-section {
+  margin-top: 5rem;
+  object-fit: cover;
+  color: red;
+}
+
+.skill-section h2 {
+  text-align: center;
+}
+
+.skills {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  text-align: center;
+  margin-top: 50px;
+  position: relative;
+}
+
+.skills > div {
+  width: 300px;
+  height: 400px;
+  flex-wrap: wrap;
+  border-radius: 30px;
+  margin: 15px;
+  border: 2px solid #ccc;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.skills > div img {
+  width: fit-content;
+  padding: 15px;
+  object-fit: cover;
+  mix-blend-mode: lighten;
+  border-radius: 40px;
+  height: auto;
+  overflow: hidden;
+}
+
+.projects-section > h3 {
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.projects {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+  position: relative;
+  justify-content: space-around;
+  text-align: justify;
+}
+
+.projects div {
+  flex-wrap: wrap;
+  margin: 5px;
+  margin-bottom: 5rem;
+  padding: 10px;
+  width: 500px;
+  flex-basis: auto;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.projects div img {
+  width: 100%;
+  flex-wrap: wrap;
+  border-radius: 25px;
+  height: 400px;
+  margin-bottom: 10px;
+}
+
+.github {
+  padding: 0.8rem;
+  background-color: black;
+  color: white;
+  width: fit-content;
+  border-radius: 12px;
+}
+
+.github a {
+  color: white;
+}
+
+.footer {
+  padding: 20px;
+  background-color: #f1f1f1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 40px 0;
+}
+
+.footer-head {
+  text-align: center;
+  flex-grow: 1;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.footer-head h3 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.footer-head hr {
+  margin: 20px auto;
+}
+
+.contact-links {
+  text-align: center;
+}
+
+.social-head {
+  width: 100%;
+  text-align: center;
+}
+
+.social-head h3 {
+  margin: 0;
+  font-size: 20px;
+  padding: 10px 0;
+  background-color: #333;
+  color: #fff;
+}
+
+.linkss {
+  display: inline-block;
+  margin: 10px;
+}
+
+.linkss a img {
+  width: 50px;
+  height: 50px;
+  aspect-ratio: 3/4;
+  mix-blend-mode: multiply;
+}
+
+.email-contact {
+  width: 600px;
+  text-align: justify;
+  flex-wrap: wrap;
+}
+
+.email-contact p { 
+  margin-top: 15px;
+  padding: 15px;
+  flex-wrap: wrap;
+  background-color: black;
+  border-radius: 20px;
+  width: fit-content;
+}
+
+.email-contact a {
+  color: #db0808;
+  flex-wrap: wrap;
+}
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    position: absolute;
+    top: 10%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #4c9e9e;
+    z-index: 999;
+    padding: 16px 0;
+  }
+
+  .menu li {
+    display: block;
+    padding: 12px;
+  }
+
+  .menu li:hover {
+    display: inline-block;
+    background-color: #4c9e9e;
+    transition: 0.3s ease;
+  }
+
+  .menu li+li {
+    margin-top: 12px;
+  }
+
+  input[type=checkbox]:checked ~ .menu {
+    display: block;
+  }
+
+  .hamburger {
+    display: block;
+    position: absolute;
+    user-select: none;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+  }
+
+  .dropdown {
+    left: 50%;
+    top: 30px;
+    transform: translateX(35%);
+  }
+}
+
+@media screen and (min-width: 300px) {
+  .name {
+    display: flex; 
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    overflow: hidden;
+  }
+
+  .name-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 10px;
+  }
+
+  .name-start {
+    position: absolute;
+    top: 1rem;
+  
+    display: flex; 
+    flex-wrap: wrap;
+    font-size: 2rem !; 
+    font-family: cursive;
+    background-image: linear-gradient(to right, #500dd7, #db0808);
+    background-clip: text;
+    -webkit-background-clip: text;
+    height: fit-content;
+    color: transparent;
+  }
+
+  .name-start h2 {
+    text-align: center;
+    font-size: 2rem; 
+    margin-left: 0;
+    top: 0;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .name {
+    height: 500px; 
+    margin-top: 20px;
+  }
+
+  .name-start {
+    top: 10rem;
+    margin: 0 5rem;
+    font-size: 15px;
+  }
+
+  .skill {
+    padding: 10px;
+    width: 100%;
+    color: black;
+    box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
+  .skill-section {
+    margin-top: 5rem;
+    width: 100%;
+    color: red;
+  }
+
+  .skills {
+    width: 100%;
+  }
+
+  .skills > div {
+    width: 200px;
+    height: 300px;
+  }
+
+  .skills > div img {
+    width: 160px;
+  }
+
+  .projects {
+    width: 100%;
+    text-align: center;
+  }
+
+  .projects div {
+    width: inherit;
+    padding: 10px;
+  }
+
+  .projects div img {
+    width: inherit !important;
+  }
+
+  .footer { 
+    text-align: left;
+    width: 100%;
+  }
+
+  .footer-start {
+    display: flex;
+    flex-direction: column-reverse;
+    width: inherit;
+    padding: 5px;
+  }
+
+  .social-media {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .social-media div a img {
+    width: 50px;
+  }
+
+  .email-contact {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .email-contact div {
+    width: inherit;
+  }
+
+  .email-note span {
+    width: 260px;
+  }
+
+  .email-contact p {
+    width: 80px;
+  }
+}
